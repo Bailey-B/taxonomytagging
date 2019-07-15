@@ -1,7 +1,7 @@
 # Match Article DOIs to Relevant Tag Codes.
 
 # Set your working directory (examples below). Use getwd() to check your current working directory.
-setwd("/Users/baileybaumann/Documents/R/taxonomy") # Mac.
+# setwd("/Users/baileybaumann/Documents/R/taxonomy") # Mac.
 # setwd("C:/Users/bbaumann/OneDrive - SAGE Publishing/Desktop/Reporting Projects/R/taxonomy") # Windows.
 
 # You only need to install these packages once.
