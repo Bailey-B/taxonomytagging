@@ -21,7 +21,7 @@ Please see socr-dummy.csv and tags-dummy.txt for formatting examples. I don't re
 ## Web Scraping with rvest
 This is the section that takes the longest to run. In RStudio, look for the red stop sign at the top right of your console. Nothing new will appear in in the console or the Global Environment until the web scraping loop has finished, but if the stop sign is still there, the loop is still working.
 
-I was able to successfully scrape 2,353 articles with R 3.6.0, on Mac OS 10.14.5, with 16 G of RAM, but it took 30 minutes. I plan to update this script so the web scraping step is done in parallel.
+I was able to successfully scrape 2,353 articles with R 3.6.0, on Mac OS 10.14.5, with 16 G of RAM, but it took 35 minutes. I plan to update this script so the web scraping step is done in parallel.
 
 Change article.max if you want to test the script on a smaller number of urls than is in your version of socr.csv.
 
