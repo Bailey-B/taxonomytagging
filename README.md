@@ -26,13 +26,13 @@ I was able to successfully scrape 2,353 articles with R 3.6.0, on Mac OS 10.14.5
 Change article.max if you want to test the script on a smaller number of urls than is in your version of socr.csv.
 
 ## Matching with stringr::str_extract_all()
-This script will match whole tag names against words and phrases in the articles, their titles, and any keywords. One limitation of this method is if your tag name is something like "Hospitality and Tourism" the script will not find a match if the article only uses the words "hospitality" and/or "tourism" separately. However, it also won't find a false match if your tag name is "Hospital Administration" and the article only has the word "administration" because it is about school administration. 
+This script will match whole tag names against words and phrases in the articles, their titles, and any keywords. One limitation of this method is if your tag name is something like "Hospitality and Tourism" the script will not find a match if the article only uses the words "hospitality" and/or "tourism" separately. However, it also won't find a false match if your tag name is "Hospital Administration" and the article uses the word "administration" in the context of school administration. 
 
 **Be sure to spot check your taggings before uploading them to Atypon.**
 
 If you notice tag names aren't getting matched with as many articles as you'd expect, consider updating your tags.txt file so, for example, "hospitality" and "tourism" are listed as separate tag names with the same tag code. 
 
-Another idea is to try something more complex than string matching in a future version of this project. Adam Day has recommended an autoML https://cloud.google.com/natural-language/automl/entity-analysis/docs/.
+Another idea is to try something more complex in a future version of this project. Adam Day has recommended an autoML https://cloud.google.com/natural-language/automl/entity-analysis/docs/.
 
 ## Formatting for the File Upload Handler
 This script will write a file for Atypon's File Upload Handler. Make sure you include this file and the manifest in a .zip file that has been named appropriately for the taxonomy you are updating. 
