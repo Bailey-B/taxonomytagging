@@ -36,8 +36,7 @@ urls.dois <- as.data.frame(cbind(urls.vector, dois.vector))
 for (i in article.min:article.max) {
   if (i %% 1000 == 0) { # Adds 1 second delay every 1,000 articles so as not to overload server.
     Sys.sleep(1)
-  }
-  # Specify a different useragent if appropriate. Important step if you are scraping a lot of pages.
+  } # Specify a different useragent if appropriate. Important step if you are scraping a lot of pages.
   article <- read_html(curl(paste0(urls.vector[i])), handle = new_handle("useragent" = "Mozilla/5.0"))
   articletext <- article %>%
     html_nodes(".hlFld-KeywordText , p , h1") %>% # Or different HTML classes.
