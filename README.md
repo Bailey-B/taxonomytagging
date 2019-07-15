@@ -37,7 +37,13 @@ Another idea is to try something more complex than string matching in a future v
 ## Formatting for the File Upload Handler
 This script will write a file for Atypon's File Upload Handler. Make sure you include this file and the manifest in a .zip file that has been named appropriately for the taxonomy you are updating. 
 
-**Be sure to do an incremental upload so you don't overwrite any existing taggings.**
+In the Web Admin Tool, select Administration > File Uploads > File Upload. The File Format is Taxonomy Upload Handler. The Update Type is Incremental. Add your .zip file to the File List.
+
+**Be sure you select "Incremental" as your Update Type so you don't overwrite any existing taggings.**
+
+## Final Notes
+It looks like Web Admin Tool allows automatic tagging based on the content of XML files and XPath Rules, which can be set in a tag's Criteria panel. It would be ideal if our XML files eventually included something we could use to create XPath rules for collection tagging.
+
 
 
 
